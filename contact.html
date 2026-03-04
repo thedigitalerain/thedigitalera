@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | THE DIGITAL ERA</title>
+  <meta name="description" content="Contact THE DIGITAL ERA team for data intelligence, lead generation, and WhatsApp API onboarding." />
+  <meta property="og:title" content="Contact THE DIGITAL ERA" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header data-navbar class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"><nav class="max-w-7xl mx-auto px-6 py-4 glass mt-3 rounded-2xl"><div class="flex justify-between"><a href="index.html" class="font-semibold">THE DIGITAL ERA</a><ul class="hidden md:flex gap-8"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html" class="text-blue-300">Contact Us</a></li></ul><a href="services.html" class="hidden md:block gradient-btn px-5 py-2.5 rounded-xl">Get Business Data</a><button data-menu-btn class="md:hidden">☰</button></div><div data-mobile-menu class="hidden mt-4 md:hidden"><a href="index.html" class="block">Home</a><a href="about.html" class="block">About</a><a href="services.html" class="block">Services</a><a href="contact.html" class="block">Contact</a></div></nav></header>
+  <main class="pt-28 max-w-7xl mx-auto px-6 pb-20">
+    <section class="py-20" data-animate-up>
+      <h1 class="text-5xl font-bold">Contact Our Team</h1>
+    </section>
+    <section class="grid lg:grid-cols-2 gap-8">
+      <form class="glass rounded-2xl p-8 space-y-4" data-animate-up>
+        <h2 class="text-2xl font-semibold">Submit Inquiry</h2>
+        <input class="w-full bg-slate-950/70 border border-slate-700 rounded-xl p-3" placeholder="Name" required />
+        <input type="email" class="w-full bg-slate-950/70 border border-slate-700 rounded-xl p-3" placeholder="Email" required />
+        <input class="w-full bg-slate-950/70 border border-slate-700 rounded-xl p-3" placeholder="Phone" required />
+        <input class="w-full bg-slate-950/70 border border-slate-700 rounded-xl p-3" placeholder="Business Name" required />
+        <textarea class="w-full bg-slate-950/70 border border-slate-700 rounded-xl p-3" rows="4" placeholder="Message"></textarea>
+        <button class="gradient-btn px-6 py-3 rounded-xl font-semibold" type="submit">Submit Inquiry</button>
+      </form>
+      <div class="space-y-6">
+        <div class="glass rounded-2xl p-7" data-animate-up><h3 class="text-xl font-semibold">Contact Information</h3><p class="mt-3 text-slate-300">support@thedigitalera.shop</p><p class="text-slate-300">+91 XXXXX XXXXX</p><p class="text-slate-300">India</p></div>
+        <div class="glass rounded-2xl p-4" data-animate-up>
+          <iframe title="map" class="w-full h-72 rounded-xl border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=India&t=&z=4&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/main.js"></script>
+</body>
+</html>
