@@ -1,0 +1,94 @@
+:root {
+  --bg: #0b0b0f;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --primary: #2563eb;
+  --grad-a: #7c3aed;
+  --grad-b: #2563eb;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(circle at top right, rgba(124,58,237,.2), transparent 40%),
+              radial-gradient(circle at left center, rgba(37,99,235,.15), transparent 45%),
+              var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: 'Sora', 'Poppins', sans-serif; }
+
+.glass {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.gradient-btn {
+  background: linear-gradient(120deg, var(--grad-a), var(--grad-b), #1d4ed8);
+  background-size: 200% 200%;
+  animation: gradientMove 4s ease infinite;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 35px rgba(37,99,235,.4);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-wave {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(124,58,237,.26), transparent 35%),
+              radial-gradient(circle at 75% 30%, rgba(37,99,235,.24), transparent 30%),
+              radial-gradient(circle at 70% 70%, rgba(59,130,246,.2), transparent 38%);
+  filter: blur(12px);
+  z-index: -1;
+  animation: pulseWave 7s ease-in-out infinite alternate;
+}
+
+@keyframes pulseWave {
+  from { transform: scale(1) translateY(0px); }
+  to { transform: scale(1.06) translateY(8px); }
+}
+
+.floating { animation: floatY 4s ease-in-out infinite; }
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.card-hover { transition: transform .25s ease, border-color .25s ease; }
+.card-hover:hover {
+  transform: translateY(-6px);
+  border-color: rgba(96,165,250,.8);
+}
+
+.counter-number { font-variant-numeric: tabular-nums; }
+
+.nav-scrolled {
+  background: rgba(2, 6, 23, .65);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.particle {
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(96,165,250,.45);
+  animation: drift 18s linear infinite;
+}
+
+@keyframes drift {
+  from { transform: translateY(20px) translateX(0); opacity: .2; }
+  50% { opacity: .7; }
+  to { transform: translateY(-560px) translateX(90px); opacity: .1; }
+}
