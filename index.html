@@ -3,137 +3,456 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>THE DIGITAL ERA | India’s Most Powerful B2B Business Data Platform</title>
-  <meta name="description" content="THE DIGITAL ERA helps businesses scale with verified B2B records, domain owner intelligence, and WhatsApp lead generation tools." />
-  <meta property="og:title" content="THE DIGITAL ERA - B2B Data Intelligence Platform" />
-  <meta property="og:description" content="Explore verified business records, domain owner data, and WhatsApp automation to accelerate growth." />
+  <title>StartupAfrica360 | Launch Your Online Business in Days</title>
+  <meta name="description" content="StartupAfrica360 helps entrepreneurs in Nigeria and South Africa launch ecommerce, delivery, marketplace, and mobile app businesses without coding or expensive developers." />
+  <meta property="og:title" content="StartupAfrica360 | Launch Your Online Business in Days" />
+  <meta property="og:description" content="Get your website, mobile apps, and complete business system — without developers, without coding, and without wasting time." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://thedigitalera.shop/" />
-  <meta property="og:image" content="https://thedigitalera.shop/og-image.jpg" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0a2540" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Organization","name":"THE DIGITAL ERA","url":"https://thedigitalera.shop","email":"support@thedigitalera.shop","sameAs":["https://www.linkedin.com","https://www.instagram.com","https://twitter.com"]}
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0A2540',
+              green: '#0FAF72',
+              orange: '#FF8A3D',
+              cream: '#F6FBFF'
+            }
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(10, 37, 64, 0.14)'
+          }
+        }
+      }
+    };
   </script>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header data-navbar class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-    <nav class="max-w-7xl mx-auto px-6 py-4 glass mt-3 rounded-2xl">
-      <div class="flex items-center justify-between">
-        <a href="index.html" class="text-lg font-semibold tracking-wide">THE DIGITAL ERA</a>
-        <ul class="hidden md:flex items-center gap-8 text-slate-200">
-          <li><a class="hover:text-blue-300" href="index.html">Home</a></li>
-          <li><a class="hover:text-blue-300" href="about.html">About Us</a></li>
-          <li><a class="hover:text-blue-300" href="services.html">Services</a></li>
-          <li><a class="hover:text-blue-300" href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="hidden md:block">
-          <a href="services.html" class="gradient-btn text-white px-5 py-2.5 rounded-xl">Get Business Data</a>
-        </div>
-        <button data-menu-btn class="md:hidden">☰</button>
+  <header data-navbar class="site-header fixed inset-x-0 top-0 z-50">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#top" class="flex items-center gap-3 font-semibold text-brand-blue">
+        <span class="logo-mark">SA</span>
+        <span>StartupAfrica360</span>
+      </a>
+      <div class="hidden items-center gap-7 text-sm font-medium text-slate-700 lg:flex">
+        <a href="#slider">Ideas</a>
+        <a href="#pain">Challenges</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#countries">Africa Focus</a>
       </div>
-      <div data-mobile-menu class="hidden md:hidden mt-4 space-y-2 text-sm">
-        <a href="index.html" class="block">Home</a><a href="about.html" class="block">About</a><a href="services.html" class="block">Services</a><a href="contact.html" class="block">Contact</a>
+      <div class="hidden lg:block">
+        <a href="#final-cta" class="btn btn-primary btn-sm">Start Your Startup</a>
       </div>
+      <button data-menu-btn class="menu-btn lg:hidden" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
+    <div data-mobile-menu class="mobile-menu hidden border-t border-slate-200/70 bg-white/96 px-4 py-4 shadow-soft lg:hidden">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 text-sm font-medium text-slate-700">
+        <a href="#slider">Ideas</a>
+        <a href="#pain">Challenges</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#countries">Africa Focus</a>
+        <a href="#final-cta" class="btn btn-primary text-center">Start Your Startup</a>
+      </div>
+    </div>
   </header>
 
-  <main class="pt-28">
-    <section class="relative max-w-7xl mx-auto px-6 py-20 overflow-hidden">
-      <div class="hero-wave"></div>
-      <span class="particle w-2 h-2 left-10 top-72"></span><span class="particle w-3 h-3 left-1/4 top-80"></span><span class="particle w-2 h-2 right-20 top-96"></span>
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div data-animate-up>
-          <p class="text-blue-300 font-medium">Premium Digital Intelligence Platform</p>
-          <h1 class="text-4xl lg:text-6xl font-bold mt-4 leading-tight">India’s Most Powerful B2B Business Data Platform</h1>
-          <p class="text-slate-300 mt-6 text-lg">Get verified business data, domain owner information, and direct WhatsApp marketing access to grow your business faster.</p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <a href="services.html" class="gradient-btn px-6 py-3 rounded-xl font-semibold">Explore Data</a>
-            <a href="contact.html" class="glass px-6 py-3 rounded-xl font-semibold border border-slate-500 hover:border-blue-300">Contact Sales</a>
+  <main id="top">
+    <section class="hero-section overflow-hidden pt-24 sm:pt-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-6 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:pb-24 lg:pt-12">
+        <div class="space-y-6" data-reveal>
+          <div class="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-sm font-semibold text-brand-green">
+            Built for entrepreneurs in Nigeria & South Africa
+          </div>
+          <div class="space-y-4">
+            <h1 class="max-w-2xl text-4xl font-extrabold tracking-tight text-brand-blue sm:text-5xl lg:text-6xl">
+              Launch Your Online Business in Days — Not Months
+            </h1>
+            <p class="max-w-xl text-lg leading-8 text-slate-600 sm:text-xl">
+              Get your website, mobile apps, and complete business system — without developers, without coding, and without wasting time.
+            </p>
+          </div>
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <a href="#pricing" class="btn btn-primary">Start Your Startup</a>
+            <a href="#slider" class="btn btn-secondary">Explore Business Ideas</a>
+          </div>
+          <div class="grid max-w-xl grid-cols-3 gap-3 pt-2 text-sm text-slate-600">
+            <div class="stat-pill"><strong>Fast launch</strong><span>Go live in days</span></div>
+            <div class="stat-pill"><strong>No coding</strong><span>We build it for you</span></div>
+            <div class="stat-pill"><strong>Easy payments</strong><span>40% upfront</span></div>
           </div>
         </div>
-        <div data-parallax class="glass rounded-3xl p-8 floating">
-          <h3 class="text-xl font-semibold mb-4">3D Business Growth Stack</h3>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="p-4 rounded-xl bg-slate-900/80">📊 Business Data</div>
-            <div class="p-4 rounded-xl bg-slate-900/80">🌐 Domain Intelligence</div>
-            <div class="p-4 rounded-xl bg-slate-900/80">💬 WhatsApp Marketing</div>
-            <div class="p-4 rounded-xl bg-slate-900/80">🎯 Lead Generation</div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="visual-card visual-card-main shadow-soft">
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=900&q=80"
+              alt="Young African entrepreneur using a laptop while holding a phone"
+              class="hero-person"
+              fetchpriority="high"
+            />
+            <div class="dashboard-card shadow-soft">
+              <div class="dashboard-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="dashboard-grid">
+                <div class="metric-card success">
+                  <p>Orders</p>
+                  <strong>+126</strong>
+                </div>
+                <div class="metric-card warm">
+                  <p>Revenue</p>
+                  <strong>$4.8k</strong>
+                </div>
+                <div class="chart-card">
+                  <div class="bars"><span></span><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="phone-card shadow-soft">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app-badge">Startup app</div>
+                <div class="phone-row"><span></span><span></span></div>
+                <div class="phone-map"></div>
+                <div class="phone-cta">Payments active</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-14" data-animate-up>
-      <div class="grid md:grid-cols-4 gap-6">
-        <div class="glass rounded-2xl p-6 text-center"><p data-counter="10" data-suffix="M+" class="counter-number text-3xl font-bold text-blue-300">0</p><p>Business Records</p></div>
-        <div class="glass rounded-2xl p-6 text-center"><p data-counter="5" data-suffix="M+" class="counter-number text-3xl font-bold text-blue-300">0</p><p>Domain Owners</p></div>
-        <div class="glass rounded-2xl p-6 text-center"><p data-counter="2" data-suffix="M+" class="counter-number text-3xl font-bold text-blue-300">0</p><p>WhatsApp Contacts</p></div>
-        <div class="glass rounded-2xl p-6 text-center"><p data-counter="5000" data-suffix="+" class="counter-number text-3xl font-bold text-blue-300">0</p><p>Happy Clients</p></div>
+    <section id="slider" class="section-shell">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Explore what you can launch</span>
+        <h2>One platform. Five proven startup directions.</h2>
+        <p>Swipe-friendly, visual-first ideas designed to make starting feel simple and exciting.</p>
+      </div>
+      <div class="slider" data-slider>
+        <div class="slider-track">
+          <article class="slide is-active">
+            <div class="slide-media">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="African entrepreneur team planning a startup" loading="lazy" />
+            </div>
+            <div class="slide-copy">
+              <span class="slide-tag">Slide 1</span>
+              <h3>Turn Your Idea Into a Real Business</h3>
+              <p>Move from rough idea to polished website, mobile app, payments, and admin dashboard with a guided launch system.</p>
+              <a href="#final-cta" class="btn btn-primary">Start Your Startup</a>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="slide-media">
+              <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="African entrepreneur managing an online store on laptop and phone" loading="lazy" />
+            </div>
+            <div class="slide-copy">
+              <span class="slide-tag">Slide 2</span>
+              <h3>Start Your Online Store &amp; Sell Across Your City</h3>
+              <p>Launch an ecommerce brand with product pages, customer checkout, order tracking, and delivery-ready workflows.</p>
+              <a href="#categories" class="btn btn-primary">Start Your Startup</a>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="slide-media">
+              <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?auto=format&fit=crop&w=1200&q=80" alt="African logistics founder working with laptop and smartphone" loading="lazy" />
+            </div>
+            <div class="slide-copy">
+              <span class="slide-tag">Slide 3</span>
+              <h3>Build Your Own Delivery or Logistics Platform</h3>
+              <p>Create customer, rider, and admin experiences that help you coordinate pickups, drop-offs, and live operations faster.</p>
+              <a href="#final-cta" class="btn btn-primary">Start Your Startup</a>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="slide-media">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="African founders collaborating on a marketplace business" loading="lazy" />
+            </div>
+            <div class="slide-copy">
+              <span class="slide-tag">Slide 4</span>
+              <h3>Create Your Own Marketplace Like Jumia or Amazon</h3>
+              <p>Connect buyers and sellers with a modern storefront, vendor dashboards, payment flows, and clean operations tools.</p>
+              <a href="#categories" class="btn btn-primary">Start Your Startup</a>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="slide-media">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Young African woman launching a mobile app business" loading="lazy" />
+            </div>
+            <div class="slide-copy">
+              <span class="slide-tag">Slide 5</span>
+              <h3>Launch Your Mobile App Business Without Coding</h3>
+              <p>Get Android, iOS, and admin tools designed together so you can focus on growth instead of technical roadblocks.</p>
+              <a href="#pricing" class="btn btn-primary">Start Your Startup</a>
+            </div>
+          </article>
+        </div>
+        <div class="slider-controls">
+          <button data-slider-prev aria-label="Previous slide">←</button>
+          <div class="slider-dots" data-slider-dots></div>
+          <button data-slider-next aria-label="Next slide">→</button>
+        </div>
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-16">
-      <h2 data-animate-up class="text-3xl font-bold mb-8">Platform Features</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <article data-animate-up class="glass rounded-2xl p-6 card-hover"><h3 class="font-semibold text-xl">B2B Business Database</h3><p class="mt-3 text-slate-300">Access millions of verified business records across India.</p><a href="https://database.thedigitalera.shop" class="text-blue-300 mt-4 inline-block">database.thedigitalera.shop</a></article>
-        <article data-animate-up class="glass rounded-2xl p-6 card-hover"><h3 class="font-semibold text-xl">Domain Owner Database</h3><p class="mt-3 text-slate-300">Find domain owners and website businesses for marketing and partnerships.</p><a href="https://domain.thedigitalera.shop" class="text-blue-300 mt-4 inline-block">domain.thedigitalera.shop</a></article>
-        <article data-animate-up class="glass rounded-2xl p-6 card-hover"><h3 class="font-semibold text-xl">WhatsApp Business API</h3><p class="mt-3 text-slate-300">Send bulk campaigns, automated replies, and customer engagement journeys.</p><a href="https://app.thedigitalera.shop" class="text-blue-300 mt-4 inline-block">app.thedigitalera.shop</a></article>
-        <article data-animate-up class="glass rounded-2xl p-6 card-hover"><h3 class="font-semibold text-xl">Smart Lead Generation</h3><p class="mt-3 text-slate-300">AI-powered lead discovery system to target the right audience.</p></article>
+    <section id="pain" class="section-shell section-muted">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Why people stay stuck</span>
+        <h2>What’s Stopping You From Starting?</h2>
+        <p>Most entrepreneurs don’t fail because of ideas — they fail because of these challenges.</p>
+      </div>
+      <div class="pain-grid">
+        <article class="pain-card" data-reveal>
+          <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80" alt="Frustrated entrepreneur worrying about development costs" loading="lazy" />
+          <div><h3>Developers are too expensive</h3><p>Budget pressure makes even a simple idea feel out of reach.</p></div>
+        </article>
+        <article class="pain-card" data-reveal>
+          <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=900&q=80" alt="Entrepreneur stressed about long app development timeline" loading="lazy" />
+          <div><h3>Building apps takes too long</h3><p>You lose momentum while waiting months for a product.</p></div>
+        </article>
+        <article class="pain-card" data-reveal>
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80" alt="African entrepreneur confused about where to start" loading="lazy" />
+          <div><h3>You don’t know where to start</h3><p>Too many choices create paralysis instead of progress.</p></div>
+        </article>
+        <article class="pain-card" data-reveal>
+          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80" alt="Entrepreneur overwhelmed by technical setup" loading="lazy" />
+          <div><h3>Everything feels too technical</h3><p>Tools, hosting, payments, and apps can feel overwhelming fast.</p></div>
+        </article>
+        <article class="pain-card" data-reveal>
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="Founder afraid of wasting money on the wrong startup idea" loading="lazy" />
+          <div><h3>You’re afraid of wasting money</h3><p>You need confidence before investing in your next move.</p></div>
+        </article>
+        <article class="pain-card" data-reveal>
+          <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=900&q=80" alt="Solo entrepreneur without a technical team" loading="lazy" />
+          <div><h3>You don’t have a team</h3><p>Doing everything alone makes launching feel impossible.</p></div>
+        </article>
+        <article class="pain-card" data-reveal>
+          <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80" alt="Business owner worried about getting customers" loading="lazy" />
+          <div><h3>You don’t know how to get customers</h3><p>You want a business system, not just a basic website.</p></div>
+        </article>
+        <article class="pain-card" data-reveal>
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Founder confused by too many digital tools" loading="lazy" />
+          <div><h3>Too many tools, no clear system</h3><p>You need one clean path from idea to launch.</p></div>
+        </article>
+      </div>
+      <div class="section-cta" data-reveal>
+        <a href="#solutions" class="btn btn-primary">Start Your Startup</a>
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-16">
-      <h2 data-animate-up class="text-3xl font-bold mb-8">How It Works</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div data-animate-up class="glass rounded-2xl p-6"><p class="text-3xl">1️⃣</p><h3 class="font-semibold text-xl mt-3">Search Business / Domain</h3></div>
-        <div data-animate-up class="glass rounded-2xl p-6"><p class="text-3xl">2️⃣</p><h3 class="font-semibold text-xl mt-3">Extract Verified Data</h3></div>
-        <div data-animate-up class="glass rounded-2xl p-6"><p class="text-3xl">3️⃣</p><h3 class="font-semibold text-xl mt-3">Connect via WhatsApp API</h3></div>
+    <section id="solutions" class="section-shell">
+      <div class="solution-layout">
+        <div class="section-head text-left" data-reveal>
+          <span class="eyebrow">The easier way</span>
+          <h2>Everything You Need to Launch Your Startup — In One Place</h2>
+          <p>We give you the complete system to start and grow your online business — without coding, without hiring developers, and without delays.</p>
+          <div class="feature-points">
+            <div class="feature-point"><strong>Website + apps</strong><span>One connected experience for customers and admins.</span></div>
+            <div class="feature-point"><strong>Payments + automation</strong><span>From checkout to notifications and CRM workflows.</span></div>
+            <div class="feature-point"><strong>Launch guidance</strong><span>Clear structure so you move from idea to action quickly.</span></div>
+          </div>
+          <a href="#pricing" class="btn btn-primary">Start Your Startup</a>
+        </div>
+        <div class="solution-visual" data-reveal>
+          <div class="solution-screen shadow-soft">
+            <div class="solution-topbar"><span></span><span></span><span></span></div>
+            <div class="solution-body">
+              <aside>
+                <div class="mini-logo">360</div>
+                <span class="active">Dashboard</span>
+                <span>Orders</span>
+                <span>Payments</span>
+                <span>Customers</span>
+              </aside>
+              <div class="canvas">
+                <div class="canvas-card large">
+                  <p>Monthly growth</p>
+                  <div class="line-chart"><span></span></div>
+                </div>
+                <div class="canvas-card">
+                  <p>Mobile app installs</p>
+                  <strong>2,845</strong>
+                </div>
+                <div class="canvas-card">
+                  <p>Payments success</p>
+                  <strong>94%</strong>
+                </div>
+                <div class="canvas-card tall">
+                  <p>Live app preview</p>
+                  <div class="app-preview">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-16">
-      <h2 data-animate-up class="text-3xl font-bold mb-8">Industries Using Our Data</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
-        <div class="glass p-4 rounded-xl" data-animate-up>Digital Marketing Agencies</div><div class="glass p-4 rounded-xl" data-animate-up>Real Estate</div><div class="glass p-4 rounded-xl" data-animate-up>SaaS Companies</div><div class="glass p-4 rounded-xl" data-animate-up>E-commerce</div><div class="glass p-4 rounded-xl" data-animate-up>Financial Services</div><div class="glass p-4 rounded-xl" data-animate-up>IT Companies</div>
+    <section id="categories" class="section-shell section-muted">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Top startup categories</span>
+        <h2>Start Any of These Businesses Today</h2>
+        <p>Choose a business model and we’ll help turn it into a modern launch-ready platform.</p>
+      </div>
+      <div class="category-grid">
+        <article class="category-card" data-reveal><span>🛒</span><h3>Ecommerce Store</h3><p>Sell products online with checkout, orders, and customer accounts.</p></article>
+        <article class="category-card" data-reveal><span>🍔</span><h3>Food Delivery Platform</h3><p>Menus, rider tracking, and real-time order management.</p></article>
+        <article class="category-card" data-reveal><span>📦</span><h3>Logistics / Delivery Business</h3><p>Pickups, dispatch, pricing, and customer updates in one workflow.</p></article>
+        <article class="category-card" data-reveal><span>🏬</span><h3>Marketplace Platform</h3><p>Bring buyers and sellers together with vendor dashboards.</p></article>
+        <article class="category-card" data-reveal><span>🚗</span><h3>Ride-Hailing App</h3><p>Bookings, maps, payments, and driver management tools.</p></article>
+        <article class="category-card" data-reveal><span>🥬</span><h3>Grocery Delivery</h3><p>Fast-moving inventory, local delivery, and reorder features.</p></article>
+        <article class="category-card" data-reveal><span>💊</span><h3>Pharmacy Delivery</h3><p>Prescription-friendly ordering with trusted delivery operations.</p></article>
+        <article class="category-card" data-reveal><span>📅</span><h3>Booking Platform</h3><p>Appointments, availability, reminders, and customer profiles.</p></article>
+        <article class="category-card" data-reveal><span>🎓</span><h3>School Management System</h3><p>Attendance, fees, communication, and admin control in one place.</p></article>
+        <article class="category-card" data-reveal><span>🧑🏾‍💻</span><h3>Digital Service Marketplace</h3><p>Match customers with creatives, consultants, and digital talent.</p></article>
+      </div>
+      <div class="section-cta" data-reveal>
+        <a href="#pricing" class="btn btn-primary">Start Your Startup</a>
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-16">
-      <h2 data-animate-up class="text-3xl font-bold mb-8">Client Benefits</h2>
-      <div class="grid md:grid-cols-2 gap-4">
-        <div class="glass p-5 rounded-xl" data-animate-up>✔ Instant access to business data</div><div class="glass p-5 rounded-xl" data-animate-up>✔ Domain owner contact discovery</div><div class="glass p-5 rounded-xl" data-animate-up>✔ Direct WhatsApp marketing</div><div class="glass p-5 rounded-xl" data-animate-up>✔ High quality verified leads</div><div class="glass p-5 rounded-xl" data-animate-up>✔ Save marketing cost</div><div class="glass p-5 rounded-xl" data-animate-up>✔ Increase conversion rates</div><div class="glass p-5 rounded-xl md:col-span-2" data-animate-up>✔ Scalable business outreach</div>
+    <section id="services" class="section-shell">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Done-for-you setup</span>
+        <h2>We Build Everything For You</h2>
+        <p>From idea to launch — we handle the complete setup of your business.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-item" data-reveal><span>🌐</span><div><h3>Website Development</h3><p>Modern, responsive website built for conversion.</p></div></div>
+        <div class="service-item" data-reveal><span>🤖</span><div><h3>Android App Development</h3><p>Launch on Android where your audience already is.</p></div></div>
+        <div class="service-item" data-reveal><span>🍎</span><div><h3>iOS App Development</h3><p>Premium app experience for iPhone users.</p></div></div>
+        <div class="service-item" data-reveal><span>📊</span><div><h3>Admin Dashboard (CRM)</h3><p>Track customers, orders, payments, and growth in one place.</p></div></div>
+        <div class="service-item" data-reveal><span>💳</span><div><h3>Payment Integration</h3><p>Collect payments smoothly and build trust with buyers.</p></div></div>
+        <div class="service-item" data-reveal><span>⚙️</span><div><h3>Business Automation</h3><p>Save time with notifications, workflows, and smart operations.</p></div></div>
+        <div class="service-item" data-reveal><span>☁️</span><div><h3>Hosting &amp; Setup</h3><p>We configure the technical pieces so you don’t have to.</p></div></div>
+        <div class="service-item" data-reveal><span>🛟</span><div><h3>Technical Support</h3><p>Ongoing help as you launch and start growing.</p></div></div>
+        <div class="service-item" data-reveal><span>📣</span><div><h3>Marketing Setup</h3><p>Optional upsell for campaigns, funnels, and launch assets.</p></div></div>
       </div>
     </section>
 
-    <section class="max-w-5xl mx-auto px-6 py-16" data-animate-up>
-      <h2 class="text-3xl font-bold mb-8 text-center">What Our Clients Say</h2>
-      <div class="glass rounded-2xl p-8 text-center">
-        <p class="text-lg text-slate-200">“THE DIGITAL ERA helped us reduce lead generation cost by 38% and increased quality conversions in just 60 days.”</p>
-        <p class="text-blue-300 mt-4">— Growth Manager, SaaS Company</p>
+    <section id="how-it-works" class="section-shell section-muted">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Simple process</span>
+        <h2>How It Works</h2>
+        <p>Clarity creates momentum. Here’s the path from idea to launch.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card" data-reveal><span>1</span><h3>Choose Your Business Idea</h3><p>Pick the startup model that matches your market and ambition.</p></article>
+        <article class="step-card" data-reveal><span>2</span><h3>We Build Your Platform</h3><p>Our team sets up your website, apps, dashboard, and key systems.</p></article>
+        <article class="step-card" data-reveal><span>3</span><h3>You Launch in Days</h3><p>Move quickly with a clear build process and launch-ready assets.</p></article>
+        <article class="step-card" data-reveal><span>4</span><h3>Start Getting Customers</h3><p>Go live with a business that’s ready for payments, orders, and growth.</p></article>
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 pb-20" data-animate-up>
-      <div class="gradient-btn rounded-3xl p-12 text-center">
-        <h2 class="text-3xl font-bold">Start Growing Your Business Today</h2>
-        <a href="contact.html" class="inline-block mt-6 glass px-6 py-3 rounded-xl">Get Access Now</a>
+    <section id="pricing" class="section-shell">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Simple pricing</span>
+        <h2>Start from $999</h2>
+        <p>Pay 40% now, rest in easy installments. Launch with confidence instead of waiting for the “perfect time.”</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card" data-reveal>
+          <div>
+            <span class="price-tag">Starter</span>
+            <h3>$999</h3>
+            <p>Perfect for first-time founders validating a focused online business.</p>
+          </div>
+          <ul>
+            <li>Responsive website</li>
+            <li>Core business pages</li>
+            <li>Basic dashboard setup</li>
+            <li>Payment integration</li>
+          </ul>
+          <a href="#final-cta" class="btn btn-secondary">Start Your Startup</a>
+        </article>
+        <article class="price-card featured" data-reveal>
+          <div>
+            <span class="price-tag">Growth</span>
+            <h3>$1,999</h3>
+            <p>Best for founders ready to launch with stronger mobile and operational tools.</p>
+          </div>
+          <ul>
+            <li>Website + Android app</li>
+            <li>Admin dashboard (CRM)</li>
+            <li>Automation workflows</li>
+            <li>Launch support</li>
+          </ul>
+          <a href="#final-cta" class="btn btn-primary">Start Your Startup</a>
+        </article>
+        <article class="price-card" data-reveal>
+          <div>
+            <span class="price-tag">Pro</span>
+            <h3>Custom</h3>
+            <p>For ambitious platforms like marketplaces, logistics networks, or multi-app systems.</p>
+          </div>
+          <ul>
+            <li>Website + Android + iOS</li>
+            <li>Advanced workflows</li>
+            <li>Custom integrations</li>
+            <li>Priority technical support</li>
+          </ul>
+          <a href="#final-cta" class="btn btn-secondary">Book a Free Demo</a>
+        </article>
+      </div>
+      <div class="section-cta" data-reveal>
+        <a href="#final-cta" class="btn btn-primary">Start Your Startup</a>
+      </div>
+    </section>
+
+    <section id="countries" class="section-shell section-muted">
+      <div class="country-layout">
+        <div class="section-head text-left" data-reveal>
+          <span class="eyebrow">Africa first</span>
+          <h2>Starting with Nigeria &amp; South Africa<br />Expanding Across Africa</h2>
+          <p>We’re focused on helping African founders launch practical digital businesses with strong local relevance and continental ambition.</p>
+        </div>
+        <div class="map-card shadow-soft" data-reveal>
+          <svg viewBox="0 0 480 420" aria-label="Map of Africa with Nigeria and South Africa highlighted" role="img">
+            <path d="M221 32l35 14 24 25 24 10 20 27-9 23 28 26 30 67-18 58-31 25-8 52-40 18-34-10-30-21-25-31-32-13-23-54-21-9-16-51 25-38 22-47 3-38 33-33 43-10z" class="map-base"></path>
+            <circle cx="185" cy="160" r="12" class="map-highlight ng"></circle>
+            <circle cx="268" cy="336" r="12" class="map-highlight sa"></circle>
+            <text x="145" y="154">Nigeria</text>
+            <text x="282" y="340">South Africa</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="final-cta" class="section-shell final-cta-wrap">
+      <div class="final-cta shadow-soft" data-reveal>
+        <span class="eyebrow light">Ready to move?</span>
+        <h2>Your Startup Journey Starts Today</h2>
+        <p>Don’t let confusion, cost, or fear keep your idea on hold. Launch with a system that makes starting feel possible.</p>
+        <div class="cta-stack">
+          <a href="https://wa.me/2340000000000" class="btn btn-light">Chat on WhatsApp</a>
+          <a href="#pricing" class="btn btn-primary-alt">Start Your Startup</a>
+          <a href="mailto:hello@startupafrica360.com" class="btn btn-outline-light">Book a Free Demo</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-8 text-sm">
-      <div><h4 class="font-semibold mb-3">Company</h4><a href="about.html" class="block text-slate-300">About</a><a href="services.html" class="block text-slate-300">Services</a><a href="contact.html" class="block text-slate-300">Contact</a></div>
-      <div><h4 class="font-semibold mb-3">Platforms</h4><a href="https://database.thedigitalera.shop" class="block text-slate-300">B2B Database</a><a href="https://domain.thedigitalera.shop" class="block text-slate-300">Domain Owner Data</a><a href="https://app.thedigitalera.shop" class="block text-slate-300">WhatsApp API</a></div>
-      <div><h4 class="font-semibold mb-3">Legal</h4><a href="#" class="block text-slate-300">Privacy Policy</a><a href="#" class="block text-slate-300">Terms of Service</a></div>
-      <div><h4 class="font-semibold mb-3">Social</h4><div class="flex gap-3 text-slate-300"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Twitter</a></div></div>
+  <footer class="footer">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm text-slate-500 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <p>© 2026 StartupAfrica360. Launching bold ideas across Africa.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#final-cta">Contact</a>
+      </div>
     </div>
   </footer>
 
